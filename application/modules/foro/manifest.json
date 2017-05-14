@@ -1,0 +1,14 @@
+{
+	"name": "Foro",
+	"description": "forum integrated Module",
+	"author": {
+		"name": "AsmodeosNetwork",
+		"website": "http://www.asmodeosnetworkco.tk"
+	},
+
+	"admin": {
+		
+	},
+
+	"enabled":true
+}

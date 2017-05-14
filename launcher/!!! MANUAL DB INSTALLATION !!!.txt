@@ -1,0 +1,23 @@
+If the installation fails for some reason, you can still do it manually.
+
+1. Execute `install.sql` to your database. If you dont have a DB manager I recommend HeidiSQL.
+
+2. Go to script/database/ and create a file `config.php` with the following content:
+
+<?php 
+              $user="WRITE_ROOT_HERE";
+              $pass="WRITE PASSWORD HERE";
+              $auth="WRITE AUTH DB NAME HERE";
+              $chars="WRITE CHARACTERS DB NAME HERE";
+?>
+
+3. Edit `.htaccess` file content to: 
+
+DirectoryIndex manage.php
+
+4. Execute this query to your database in order to create your own account:
+
+use launcher;
+replace into security (user, password) values("YOUR USERNAME","YOUR PASSWORD");
+
+5. Delete the `index.php` file

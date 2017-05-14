@@ -1,0 +1,19 @@
+<?php 
+	include 'script/init.php';
+	Write("serverName",getServerName());
+	Write("serverRealmlist",getRealmlist());
+	Write("registerLink",getRegisterLink());
+	Write("forumLink",getForumLink());
+	Write("accountLink",getAccountLink());
+	Write("news",getNews());
+	Write("newsLink",getNewsLink());
+	Write("changelog",getChangelog());
+	Write("changelogLink",getChangelogLink());
+	Write("playersOnlineCount",getOnlinePlayersCount());
+	Write("playersOnlineData",getOnlinePlayersData());
+	for($i=1;$i<=5;$i++){
+		Write("patchVersion".$i,getPatchVersion($i));
+		Write("patchLink".$i,getPatchLink($i));
+		Write("patchName".$i,getPatchName($i));
+	}
+ ?>
